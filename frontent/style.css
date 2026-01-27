@@ -7,4 +7,5 @@ body{
     color: rgb(242, 199, 199);
     background-color: azure;
     font-size: large;
+    display: flex;
 }
