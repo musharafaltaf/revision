@@ -42,7 +42,7 @@ if(mode === "darkMode"){
     console.log("white")
 }
 
-let num = 3438743
+let num = 12
 if (num%2 === 0){
     console.log("even")
 }else{
