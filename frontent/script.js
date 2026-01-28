@@ -9,6 +9,7 @@ let myProfile = {  // we can use const as well
     from: "kashmir"
 }
 console.log(myProfile)
+console.log(myProfile.isMuslim)
 console.log(myProfile.name)
 console.log(myProfile["course"])
 
