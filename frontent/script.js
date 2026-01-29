@@ -48,3 +48,66 @@ if (num%2 === 0){
 }else{
     console.log("odd")
 }
+
+const word = "helloMusharaf";
+for(i=0;i<word.length;i++){
+    console.log(word[i])
+}
+let words = "banana";
+let count = 0;
+for(i=0;i<words.length;i++){
+    if(words[i] === "a"){
+        count++;
+    } 
+}
+console.log(count)
+
+let character = "farahsum";
+let reversed = "";
+
+for(let i = character.length -1; i>=0; i--){
+    reversed += character[i];
+}
+console.log(reversed)
+
+let wordS = "MADAM";
+let reverseds = "";
+
+for (let i = wordS.length - 1; i >=0; i--){
+    reverseds += wordS[i]
+}
+if (wordS === reverseds){
+    console.log(wordS, "is a Palindrome")
+} else{
+    console.log(wordS, "is not a Palindrome")
+}
+
+let Word = "helloooo";
+for (let char of Word){
+    console.log(char)
+}
+
+
+let text = "musharaf";
+let vowels = "aeiou";
+let Count = 0;
+
+for (let char of text){
+    if(vowels.includes(char)){
+        Count++;
+    }
+}
+console.log("in this word","'",text,"'","there are", Count, "vowles")
+
+
+let WORD = "hello";
+let result = "";
+
+for (i=0; i < WORD.length; i++){
+    let ch = WORD[i];
+
+    let uppercase = String.fromCharCode(ch.charCodeAt(0)-32);
+
+    result += uppercase;
+}
+console.log(result)
