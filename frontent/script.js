@@ -111,3 +111,71 @@ for (i=0; i < WORD.length; i++){
     result += uppercase;
 }
 console.log(result)
+
+
+// functions
+
+function greet(){
+    console.log("hello")
+}
+greet()
+
+
+function Dar(name){
+    console.log("hello",name)
+}
+Dar("musharaf")
+
+function number(a,b){
+    return a+b;
+}
+let results = number(3,4)
+console.log(results)
+
+
+function findVowels(word){
+    let vowels = "aeiou";
+    let count = 0;
+
+    for (let char of word){
+        if(vowels.includes(char)){
+            count++
+        }
+    }
+    return count;
+}
+console.log(findVowels("javascript"))
+
+
+//arrow function
+let n = 1;
+const add = (n) =>{
+    if (n % 2 === 0){
+        return "even";
+    } else{
+        return "odd";
+    }
+};
+
+let numbers = [1,2,3,4,5,];
+const squares = numbers.map(n => n * n)
+console.log(squares)
+
+const letsadd = (a,b) => a+b;
+
+
+let numberslist = [1,2,3,4,5,6,7,7,]
+
+const multiply = numberslist.map( (n) => n*2)
+console.log(multiply)
+const evens = numberslist.filter( (n) => n % 2 === 0)
+console.log(evens)
+
+const addt = numberslist.reduce((total,n) => total + n,0)
+console.log(addt)
+
+const apple = numberslist.map((p) => p*1.1)
+console.log (apple)
+
+const apples = numberslist.reduce((p) => p > 2.2)
+console.log(apples)
