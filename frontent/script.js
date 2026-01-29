@@ -179,3 +179,51 @@ console.log (apple)
 
 const apples = numberslist.reduce((p) => p > 2.2)
 console.log(apples)
+
+// destructuring
+
+let nums = [10,20,30];
+let [ x , y , z] = nums;
+console.log(x,y,z)
+
+
+let colors = ["yellow", "red", "white"]
+let [ye, r, w] = colors
+console.log(ye ,r , w)
+
+let student = {id : 1, marks : 90};
+let {id,marks} = student;
+console.log (id,marks)
+
+let num1 = [12,32,33]
+let num2 = [23,43,54]
+
+// spread
+
+let num3 = [...num1,...num2]
+console.log(num3)
+
+let user = {name:"musharaf" , course:"bca" }
+let newuser = {...user,city:"sopore"}
+
+console.log(newuser)
+
+
+//rest
+
+let numss= [5, 10, 15, 20, 25];
+let [t,d, ...rest] = numss
+console.log(t)
+console.log(d)
+console.log(rest)
+
+const mul = (...numss) =>{
+    let multi = 1;
+    for(let n of numss){
+        multi =  multi*n;
+    }
+    return multi;
+}
+console.log(mul(2, 3, 4)); 
+console.log(mul(5, 10));  
+
