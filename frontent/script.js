@@ -227,3 +227,64 @@ const mul = (...numss) =>{
 console.log(mul(2, 3, 4)); 
 console.log(mul(5, 10));  
 
+let heading = document.getElementById("Sign-up")
+console.log(heading)
+heading.innerText = "hello musharaf";
+heading.style.color = "blue";
+heading.style.backgroundColor = "white";
+heading.style.fontSize = "20px"
+
+let btn = document.querySelector("button")
+btn.addEventListener("click", ( )=> {
+    heading.innerText = "ok lets start our new topic today so lets start";
+    heading.style.color = "red"
+    console.log("working")
+})
+
+let Title = document.getElementById("title")
+let typing = document.getElementById("typehere")
+
+typing.addEventListener("input", ()=>{
+    Title.innerText = typing.value;
+    console.log(typing.value)
+})
+
+
+ let empty = document.getElementById("khalijagah")
+ let justtype = document.getElementById("type")
+ let btn1 = document.getElementById("clickHere")
+
+// justtype.addEventListener("input", () =>{
+//     btn1.addEventListener("click", ()=>{
+//         if (justtype.value  === ""){
+//             btn1.disabled = true;
+//             empty.innerHTML = "please type here ";
+//             empty.style.color = "red"
+//         } else{
+//             btn1.disabled = false;
+//             empty.innerHTML = justtype.value.toUpperCase();
+//             empty.style.color = "black"
+//             empty.style.backgroundColor = "green"
+//             empty.innerHTML.length = "black"
+//         }
+//     })
+
+    
+// })
+btn1.addEventListener("click", ()=>{
+    if()
+})
+
+
+justtype.addEventListener("click", ()=>{
+    if (justtype.value === ""){
+        empty.innerHTML = "Please type something here";
+        empty.style.color = "black"
+        empty.style.backgroundColor = "red"
+    } else{
+        empty.innerHTML = justtype.value;
+        empty.style.color = "black";
+        empty.style.backgroundColor = "green"
+    }
+})
+
