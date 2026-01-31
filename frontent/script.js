@@ -271,20 +271,73 @@ typing.addEventListener("input", ()=>{
 
     
 // })
-btn1.addEventListener("click", ()=>{
-    if()
-})
+// btn1.addEventListener("click", ()=>{
+//     if()
+// })
 
 
-justtype.addEventListener("click", ()=>{
-    if (justtype.value === ""){
-        empty.innerHTML = "Please type something here";
-        empty.style.color = "black"
-        empty.style.backgroundColor = "red"
-    } else{
-        empty.innerHTML = justtype.value;
-        empty.style.color = "black";
-        empty.style.backgroundColor = "green"
+// justtype.addEventListener("click", ()=>{
+//     if (justtype.value === ""){
+//         empty.innerHTML = "Please type something here";
+//         empty.style.color = "black"
+//         empty.style.backgroundColor = "red"
+//     } else{
+//         empty.innerHTML = justtype.value;
+//         empty.style.color = "black";
+//         empty.style.backgroundColor = "green"
+//     }
+// })
+
+
+// let input = document.getElementById("inputText")
+// let counter = document.getElementById("counter")
+
+// let maxlength = 20;
+
+// input.addEventListener("input", ()=>{
+//     let length = input.value.length;
+
+//     counter.innerHTML = `${length} / ${maxlength}`
+
+//     if(length > maxlength ){
+//         input.value = input.value.slice(0, maxlength)
+//         counter.innerText = "exceeded"
+//     } else {
+//         counter.style.color = "green";
+//     }
+// })
+
+let password = document.getElementById("password")
+let toggle = document.getElementById("toggle")
+let counter = document.getElementById("counter")
+let maxlength = 10;
+
+password.addEventListener("input", ()=>{
+    let length = password.value.length;
+    counter.innerText = `${length}/${maxlength}`
+    if(length > maxlength){
+        password.value = password.value.slice(0,maxlength)
+        counter.innerText = "exceeded"
+    }else 
+    {
+        counter.style.color = "green"
     }
 })
+
+toggle.addEventListener("click", () =>{
+    if (password.type === "password"){
+        password.type = "text";
+        toggle.innerText = "Hide";
+
+    } else if (password.value === "") {
+        toggle.innerText = "input please"
+        return;
+    }else{
+        password.type = "password"
+        toggle.innerText = "Show"
+    }
+})
+
+
+
 
