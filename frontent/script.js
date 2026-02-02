@@ -339,24 +339,39 @@
 // })
 
 
-let minus =document.getElementById("minus")
-let counter =document.getElementById("count")
-let plus = document.getElementById("plus")
+// let minus =document.getElementById("minus")
+// let counter =document.getElementById("count")
+// let plus = document.getElementById("plus")
 
-let count = 0;
+// let count = 0;
 
-plus.addEventListener("click", ()=>{
-    count++;
-    counter.innerText = count
-});
+// plus.addEventListener("click", ()=>{
+//     count++;
+//     counter.innerText = count
+// });
 
-minus.addEventListener("click",()=>{
-    if(count > 0){
+// minus.addEventListener("click",()=>{
+//     if(count > 0){
         
-        count--;
-        counter.innerText = count
+//         count--;
+//         counter.innerText = count
+//     }
+// })
+
+
+let names = document.getElementById("name")
+let fatherName = document.getElementById("fathername")
+let motherName = document.getElementsByID("mothername")
+let course = document.getElementById("course")
+let photo = document.getElementById("photograph")
+let btn = document.getElementById("submit")
+
+names.addEventListener("input", ()=>{
+    if(names.ariaValueMax.trim() === ""){
+        names.value.style.color = "red"
+    }else{
+        names.value.trim()
     }
 })
-
 
 
