@@ -359,19 +359,19 @@
 // })
 
 
-let names = document.getElementById("name")
-let fatherName = document.getElementById("fathername")
-let motherName = document.getElementsByID("mothername")
-let course = document.getElementById("course")
-let photo = document.getElementById("photograph")
-let btn = document.getElementById("submit")
+// let names = document.getElementById("name")
+// let fatherName = document.getElementById("fathername")
+// let motherName = document.getElementsByID("mothername")
+// let course = document.getElementById("course")
+// let photo = document.getElementById("photograph")
+// let btn = document.getElementById("submit")
 
-names.addEventListener("input", ()=>{
-    if(names.ariaValueMax.trim() === ""){
-        names.value.style.color = "red"
-    }else{
-        names.value.trim()
-    }
-})
+// names.addEventListener("input", ()=>{
+//     if(names.ariaValueMax.trim() === ""){
+//         names.value.style.color = "red"
+//     }else{
+//         names.value.trim()
+//     }
+// })
 
 
