@@ -78,7 +78,7 @@ main hr{
     margin-bottom: 40px;
 }
 .secondsection{
-    height: 400px;
+    height: 340px;
 }
 .secondsection p{
     color: aliceblue;
@@ -93,4 +93,85 @@ main hr{
     margin-left: 100px;
     font-size: 11px;
 }
+.secondsection .box{
+    width: 950px;
+    height: 1px;
+    background-color: aliceblue;
+    margin-left: 100px;
+    margin-top: 60px;
+    display: flex;
+}
+.secondsection .vertical{
+    width: 1px;
+    height: 80px;
+    background-color: aliceblue;
+    margin-left: 100px;
+}
+.vertical img{
+    position: relative;
+    width: 30px;
+    top: -32px;
+    left: -14px;
+}
+.vertical-text{
+    color: aliceblue;
+    position: relative;
+    top: 50px;
+    right: 24px;
+}
+.vertical #jsimg{
+    position: relative;
+    top: -45px;
+}
+footer{
+    height: 250px;
+    width: 100%;
+    background-color: rgb(2, 2, 87);
+    color: aliceblue;
+    display: flex;
+    justify-content: space-around;
+}
+.line-break{
+    height: 130px;
+    background-color: rgb(6, 116, 211);
+    width: 1.6px;
+}
+.footer-first{
+    width: 250px;
+    font-size: 20px;
+    margin-top: 8px;
+}
+.footer-first-text{
+    font-size: 12px;
+    margin-top: 25px;
+    color: rgb(186, 187, 188);
+}
+
+.footer-second{
+    width: 250px;
+    font-size: 20px;
+    margin-top: 8px;
+}
+.footer-second-text{
+    font-size: 13px;
+    margin-top: 25px;
+    color: rgb(186, 187, 188);
+}
+.footer-second-text ul li{
+    margin: 10px;
+}
+.footer-third{
+    width: 250px;
+    font-size: 20px;
+    margin-top: 8px;
+}
+.footer-third-text{
+    font-size: 12px;
+    margin-top: 25px;
+    color: rgb(186, 187, 188);
+}
+.footer-third-text ul li{
+    margin: 10px;
+}
+
 
