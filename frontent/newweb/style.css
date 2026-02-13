@@ -159,6 +159,7 @@ footer{
 }
 .footer-second-text ul li{
     margin: 10px;
+    width: 40px;
 }
 .footer-third{
     width: 250px;
@@ -173,5 +174,9 @@ footer{
 .footer-third-text ul li{
     margin: 10px;
 }
+footer .footer-second .footer-second-text ul li :hover{
+    text-decoration: underline;
+}
+
 
 
