@@ -174,8 +174,31 @@ footer{
 .footer-third-text ul li{
     margin: 10px;
 }
-footer .footer-second .footer-second-text ul li :hover{
+
+.footer-second-text ul li a {
+    text-decoration: none;
+    color: rgb(186, 187, 188);
+}
+.footer-second-text ul li :hover{
     text-decoration: underline;
+    
+}
+.rights{
+    height: 50px;
+    background-color: rgb(73, 73, 87);
+}
+.rights-first{
+    display: flex;
+    justify-content: center;
+}
+.rights-second{
+    display: flex;
+    justify-content: center;
+    margin-top: 8px;
+}
+.rights-second img{
+    height: 20px;
+    margin-right: 5px;
 }
 
 
